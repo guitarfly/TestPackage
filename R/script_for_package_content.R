@@ -10,8 +10,8 @@ subtract_numbers <- function(x, y) {
 }
 
 # 3. Multiply two numbers
-multiply_numbers <- function(x, y, z, o) {
-  x * y * z * o
+multiply_numbers <- function(x, y, z, o, p) {
+  x * y * z * o * p
 }
 
 # 4. Divide two numbers (with zero-check)

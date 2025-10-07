@@ -1,5 +1,15 @@
 
-# 1. Add two numbers
+#' Add two numbers
+#'
+#' This function adds two numeric values and returns their sum.
+#'
+#' @param x First number (numeric)
+#' @param y Second number (numeric)
+#' @return Numeric sum of `x` and `y`
+#' @examples
+#' add_numbers(2, 3)
+#' add_numbers(10, 5)
+#' @export
 add_numbers <- function(x, y) {
   x + y
 }
@@ -16,7 +26,7 @@ multiply_numbers <- function(x, y, z, o, p) {
 
 # 4. Divide two numbers (with zero-check)
 divide_numbers <- function(x, y) {
-  if(y == 0) stop("Cannot divide by zero")
+  if(y == 0) stop('Cannot divide by zero')
   x / y
 }
 
@@ -26,7 +36,7 @@ is_even <- function(x) {
 }
 
 # 6. Concatenate two strings
-concat_strings <- function(a, b, sep = " ") {
+concat_strings <- function(a, b, sep = ' ') {
   paste(a, b, sep = sep)
 }
 

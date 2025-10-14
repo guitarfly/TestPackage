@@ -11,6 +11,6 @@ A vector of color hex codes.
 violet4
 }
 \description{
-violet colours palette.
+violet colours palette with four colors.
 }
 \keyword{datasets}

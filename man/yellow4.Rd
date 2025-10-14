@@ -3,7 +3,7 @@
 \docType{data}
 \name{yellow4}
 \alias{yellow4}
-\title{yellow_4}
+\title{yellow4}
 \format{
 A vector of color hex codes.
 }

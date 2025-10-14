@@ -1,55 +1,5 @@
 
-#' Add two numbers
-#'
-#' This function adds two numeric values and returns their sum.
-#'
-#' @param x First number (numeric)
-#' @param y Second number (numeric)
-#' @return Numeric sum of `x` and `y`
-#' @examples
-#' add_numbers(2, 3)
-#' add_numbers(10, 5)
-#' @export
-add_numbers <- function(x, y) {
-  x + y
-}
-
-# Subtract two numbers
-subtract_numbers <- function(x, y) {
-  x - y
-}
-
-# 3. Add two numbers and then multiply
-add_multiply_numbers <- function(x, y, z) {
-  (x + y) * z
-}
-
-# Violet ####
-#' violet_1
-#'
-#' violet colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-violet1 <- rev(c('#662673'))
-
-#' violet_2
-#'
-#' violet colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-violet2 <- rev(c('#662673', '#B375AB'))
-
-#' violet_3
-#'
-#' violet colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-violet3 <- rev(c('#2E1235', '#662673', '#B375AB'))
-
-#' violet_4
+#' violet4
 #'
 #' violet colours palette.
 #'
@@ -57,48 +7,7 @@ violet3 <- rev(c('#2E1235', '#662673', '#B375AB'))
 #' @export
 violet4 <- rev(c('#2E1235', '#662673', '#B375AB', '#E7CEE2'))
 
-#' violet_5
-#'
-#' violet colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-violet5 <- rev(c('#2E1235', '#662673', '#923F8D', '#B375AB', '#E7CEE2'))
-
-#' violet_6
-#'
-#' violet colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-violet6 <- rev(c('#2E1235', '#662673', '#923F8D', '#B375AB', '#9A86A4', '#E7CEE2'))
-
-# Yellow ####
-#' yellow_1
-#'
-#' yellow colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-yellow1 <- rev(c('#CD9C00'))
-
-#' yellow_2
-#'
-#' yellow colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-yellow2 <- rev(c('#CD9C00', '#FFDA80'))
-
-#' yellow_3
-#'
-#' yellow colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-yellow3 <- rev(c('#45381D', '#CD9C00', '#FFDA80'))
-
-#' yellow_4
+#' yellow4
 #'
 #' yellow colours palette.
 #'
@@ -106,22 +15,23 @@ yellow3 <- rev(c('#45381D', '#CD9C00', '#FFDA80'))
 #' @export
 yellow4 <- rev(c('#45381D', '#7F5F1A', '#CD9C00', '#FFDA80'))
 
-#' yellow_5
+#' stacked_bar
 #'
-#' yellow colours palette.
+#' Create a stacked bar plot using ggplot2.
 #'
-#' @format A vector of color hex codes.
+#' @param data Data frame containing the variables to plot
+#' @param x_axis Column name for x-axis values
+#' @param y_axis Column name for y-axis values
+#' @param title Plot title
+#' @param legend_title Legend title
+#' @param x_label X-axis label
+#' @param y_label Y-axis label
+#' @param color Vector with hex code colors
+#'
+#' @return A ggplot object
+#' @examples
+#' # stacked_bar(df, 'category', 'value', 'Title', 'Legend', 'X', 'Y', c('#123456','#654321'))
 #' @export
-yellow5 <- rev(c('#45381D', '#7F5F1A', '#CD9C00', '#FABD24', '#FFDA80'))
-
-#' yellow_6
-#'
-#' yellow colours palette.
-#'
-#' @format A vector of color hex codes.
-#' @export
-yellow6 <- rev(c('#45381D', '#7F5F1A', '#BAA85A', '#CD9C00', '#FABD24', '#FFDA80'))
-
 stacked_bar <- function(data, x_axis, y_axis, title, legend_title,
                         x_label, y_label, color) {
   ggplot(data, aes_string(x = x_axis, y = y_axis, fill = legend_title)) +

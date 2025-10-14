@@ -1,7 +1,7 @@
 
 #' violet4
 #'
-#' violet colours palette.
+#' violet colours palette with four colors.
 #'
 #' @format A vector of color hex codes.
 #' @export
@@ -9,7 +9,7 @@ violet4 <- rev(c('#2E1235', '#662673', '#B375AB', '#E7CEE2'))
 
 #' yellow4
 #'
-#' yellow colours palette.
+#' yellow colours palette with four colors.
 #'
 #' @format A vector of color hex codes.
 #' @export

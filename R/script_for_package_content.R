@@ -122,3 +122,17 @@ yellow5 <- rev(c('#45381D', '#7F5F1A', '#CD9C00', '#FABD24', '#FFDA80'))
 #' @export
 yellow6 <- rev(c('#45381D', '#7F5F1A', '#BAA85A', '#CD9C00', '#FABD24', '#FFDA80'))
 
+stacked_bar <- function(data, x_axis, y_axis, title, legend_title,
+                        x_label, y_label, color) {
+  ggplot(data, aes_string(x = x_axis, y = y_axis, fill = legend_title)) +
+    geom_bar(stat = 'identity') +
+    scale_fill_manual(values = color) +
+    labs(
+      title = title,
+      x = x_label,
+      y = y_label,
+      fill = legend_title
+    ) +
+    theme_minimal()
+}
+
